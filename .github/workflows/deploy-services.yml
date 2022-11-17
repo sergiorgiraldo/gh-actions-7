@@ -15,7 +15,7 @@ jobs:
           image: node:16
         env:
             MONGODB_CONNECTION_PROTOCOL: mongodb+srv
-            # MONGODB_CLUSTER_ADDRESS: # dont need, as the mongodb is running on the service
+            MONGODB_CLUSTER_ADDRESS: cluster0.nnllzq2.mongodb.net
             MONGODB_USERNAME: root
             MONGODB_PASSWORD: pwd
             PORT: 8080
