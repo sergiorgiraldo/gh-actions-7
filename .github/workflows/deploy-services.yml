@@ -14,13 +14,13 @@ jobs:
         container: 
           image: node:16
         env:
-            MONGODB_CONNECTION_PROTOCOL: mongodb+srv
-            MONGODB_CLUSTER_ADDRESS: cluster0.nnllzq2.mongodb.net
+            MONGODB_CONNECTION_PROTOCOL: mongodb # changed the protocol due usage of mongo in service container
+            MONGODB_CLUSTER_ADDRESS: mongodb-123
             MONGODB_USERNAME: root
             MONGODB_PASSWORD: pwd
             PORT: 8080
         services:
-          mongodb:
+          mongodb-123:
             image: mongo
             env:
               MONGO_INITDB_ROOT_USERNAME: root
